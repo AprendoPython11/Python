@@ -1,8 +1,11 @@
 #imprimir la segunda letra de una palabra
 
-nombre = "Nataly"
+nombre = "Angie"
 
-print(nombre[1])
+
+print(len(nombre))
+
+print(nombre[0])
 
 #imprimir ultima letra
 
@@ -10,6 +13,5 @@ print(nombre[-1])
 
 #imprimir letra por letra
 
-# for(i=0; i<=nombre[-1] ; i++){
 
-# }
+    

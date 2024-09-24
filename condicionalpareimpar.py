@@ -14,3 +14,4 @@ elif num2 % 2 == 0:
     print("El numero ", num1, " es impar")
 else:
     print("El numero ",num1, " y ", num2," son impar")
+
