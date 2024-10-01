@@ -48,6 +48,7 @@ while(productos > 0):
     
 
 print(clientes)
+print(clientes[0])
 print(f"personas que compraron 10 productos fueron: {productos_10}")
 print(f"el numero total de clientes fue de: {len(clientes)}")
 print(f"la perosona que compró menos productos fue: {nombre_menos_productos}")
