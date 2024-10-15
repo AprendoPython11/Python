@@ -1,8 +1,11 @@
 #se necesita ingresar 2 numeros e imprimir las 4 operaciones basicas
 
 #se definen las variables
-num1 = 5
-num2 = 4
+num1num = "5"
+num2num = "4"
+
+num1 = int(num1num)
+num2 = int(num2num)
 
 #se definen las constantes
 multiplicacion = num1*num2

@@ -6,7 +6,7 @@
 # personas mayores de 60 años, el cliente que compró más boletos y el promedio de boletos vendidos por persona. 
 
 customers = []
-boletos = 40
+boletos = 100
 personas_5_boletos = 0
 boletos_ventidos_60 = 0
 nombre_persona_mas_boletos = None
