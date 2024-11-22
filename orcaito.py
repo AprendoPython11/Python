@@ -18,9 +18,10 @@ def game_orcaito():
     letters_word = set(own_word)
     alphabet = set(string.ascii_lowercase)
     used_letters = set()
+    lives = 5
 
     
-    while len(letters_word) > 0:
+    while len(letters_word) > 0 and lives > 0:
         word_list = [letter if letter in used_letters else " - " for letter in own_word]
         print("Current word ", ''.join(word_list))
 
@@ -33,6 +34,11 @@ def game_orcaito():
             if user_letter in letters_word:
                 letters_word.remove(user_letter)
                 num_letter = len(letters_word)
+            else:
+                lives = lives - 1
+                if lives > 0:
+                    print(f"this letter isn't in the word, you have {lives} left")
+                
                
         elif user_letter in used_letters:
             print("You alredy used this character, please try again")
@@ -40,6 +46,10 @@ def game_orcaito():
         else:
             print("That was a invalid character, please try again")
 
-    return f"You did! {own_word} it was the word."
+        if lives == 0:
+            return f"Sorry, you lose the game, the word it was {own_word}"
+
+        if len(letters_word) == 0:
+            return f"You did! {own_word} it was the word."
             
 print(game_orcaito())
